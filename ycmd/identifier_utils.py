@@ -62,7 +62,7 @@ COMMENT_AND_STRING_REGEX = re.compile(
 #     - not an underscore
 #       (The latter two come from \W which is the negation of \w)
 #   - Followed by any alphanumeric or _ characters
-DEFAULT_IDENTIFIER_REGEX = re.compile( r"[^\W\d]\w*", re.UNICODE )
+DEFAULT_IDENTIFIER_REGEX = re.compile( r"[^\W\d][\w\.]*", re.UNICODE )
 
 FILETYPE_TO_IDENTIFIER_REGEX = {
     # Spec: http://www.w3.org/TR/CSS2/syndata.html#characters
